@@ -8,18 +8,6 @@ import GoalWizard from './components/Dashboard/GoalWizard';
 import EatingSpeedCoach from './components/Dashboard/EatingSpeedCoach';
 import WeeklyReport from './components/Dashboard/WeeklyReport';
 import HistoryPage from './components/History/HistoryPage';
-
-import React, { useState, useCallback, useEffect } from 'react';
-import { LanguageProvider, useLanguage } from './hooks/useLanguage';
-import { useLocalStorage } from './hooks/useLocalStorage';
-import LanguageSelector from './components/Settings/LanguageSelector';
-import CameraView from './components/Camera/CameraView';
-import DailySummary from './components/Dashboard/DailySummary';
-import GoalWizard from './components/Dashboard/GoalWizard';
-import EatingSpeedCoach from './components/Dashboard/EatingSpeedCoach';
-import WeeklyReport from './components/Dashboard/WeeklyReport';
-import HistoryPage from './components/History/HistoryPage';
-
 // ── Settings page (inline, basit) ───────────────────────────────────────────
 function SettingsPage({ onClose }) {
   const { t, lang, setLang, LANGUAGE_OPTIONS } = useLanguage();
