@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useLanguage, LANGUAGE_OPTIONS } from '../../hooks/useLanguage.jsx';
+import { useLanguage, LANGUAGE_OPTIONS } from '../../hooks/useLanguage.js';
 
 export default function LanguageSelector({ compact = false }) {
   const { lang, setLang, t } = useLanguage();
