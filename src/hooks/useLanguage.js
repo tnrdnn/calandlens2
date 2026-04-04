@@ -65,9 +65,9 @@ export function LanguageProvider({ children }) {
   }, [lang]);
 
   return (
-    <LanguageContext.Provider value={{ lang, setLang, t, tArr, LANGUAGE_OPTIONS }}>
-      {children}
-    </LanguageContext.Provider>
+    React.createElement(LanguageContext.Provider, { value: { lang, setLang, t, tArr, LANGUAGE_OPTIONS } },
+      children
+    )
   );
 }
 
